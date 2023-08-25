@@ -1,0 +1,36 @@
+  <html>
+  <head>
+    <!--Load the AJAX API-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        callback: function () {
+          $.get('../subset_data/life_expectancy.processed.csv', function(csvString) {
+            var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+
+            var data = new google.visualization.arrayToDataTable(arrayData);
+            
+            // set chart options
+            var options = {
+              title: 'Life Expectancy at Birth Year based on Country',
+              curveType: 'function',
+              legend: { position: 'bottom' }
+            };
+
+            // create the chart object and draw it
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+          });
+        },
+        packages: ['corechart']
+      });
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
