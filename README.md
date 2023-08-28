@@ -15,6 +15,8 @@ Alternately, this page can be viewed in GitHub at <https://egunadi.github.io/dsc
 
 ## Design choices 
 
+The landing page showcases two visualizations, laid out side-by-side with thumbnails and a brief description. 
+
 ### display (e.g., layout)
 
 ### grouped bars - created using d3
@@ -36,6 +38,7 @@ Alternately, this page can be viewed in GitHub at <https://egunadi.github.io/dsc
 
 - Used for life expectancy data
   - Life Expectancy at Birth Year based on Country
+  - A line graph projecting life expectancy at birth from 1950-2100 for Indonesia and USA. Over time, the disparity between the two countries seem to converge at the 80-90 year age-range.
 
 #### the charts (e.g., choice of form and visual encodings, axes, etc.) 
 
