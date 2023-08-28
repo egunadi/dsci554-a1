@@ -17,34 +17,17 @@ Alternately, this page can be viewed in GitHub at <https://egunadi.github.io/dsc
 
 The landing page showcases two visualizations, laid out side-by-side with thumbnails and a brief description. 
 
-### display (e.g., layout)
+### Average Indonesian Monthly Wage by Year and Gender
 
-### grouped bars - created using d3
+This is a d3 grouped bar chart showing average Indonesian monthly wage by year and gender. From 1999-2018, wages have increased for both females and males. The wage disparity between the two genders persists consistently throughout these years.
 
-#### the information presented (e.g., explanatory text to facilitate the comprehension of the datasets presented)
+A grouped bar chart was chosen since it both shows amounts (in this case, monthly wage) and proportions (in this case, comparing wages between men and women).
 
-- Used for wages data
-  - A grouped bar chart showing average Indonesian monthly wage by year and gender. From 1999-2018, wages have increased for both females and males. The wage disparity between the two genders persists consistently throughout these years.
+### Life Expectancy at Birth Year based on Country
 
-#### the charts (e.g., choice of form and visual encodings, axes, etc.) 
+This is a Google Charts line graph projecting life expectancy at birth from 1950-2100 for Indonesia and USA. Over time, the disparity between the two countries seem to converge at the 80-90 year age-range.
 
-- If there are two or more sets of categories for which we want to show amounts, we can group or stack the bars (Chapter 6).
-- Proportions can be visualized as pie charts, side-by-side bars, or stacked bars (Chapter 10).
-- Grouped bars are used to visualize multiple sets of proportions. Grouped bars work well as long as the number of conditions compared is moderate (in this case two).
-
-### line graph - created using Google Charts
-
-#### the information presented (e.g., explanatory text to facilitate the comprehension of the datasets presented)
-
-- Used for life expectancy data
-  - Life Expectancy at Birth Year based on Country
-  - A line graph projecting life expectancy at birth from 1950-2100 for Indonesia and USA. Over time, the disparity between the two countries seem to converge at the 80-90 year age-range.
-
-#### the charts (e.g., choice of form and visual encodings, axes, etc.) 
-
-- When the x axis represents time or a strictly increasing quantity such as a treatment dose, we commonly draw line graphs (Chapter 13). 
-- We often have multiple time courses that we want to show at once.
-- Figure 13-6 represents an acceptable visualization of the preprints dataset. However, the separate legend creates unnecessary cognitive load. We can reduce this cognitive load by labeling the lines directly (Figure 13-7). I have also eliminated the individual dots in this figure, for a result that is much more streamlined and easy to read than the original starting point, Figure 13-5.
+A line graph was chosen since we are interested in how life expectancy changes over time (the x axis). Having grown up in both Indonesia and USA, I was interested in comparing time courses for these two countries.
 
 ## Running the project
 
