@@ -11,7 +11,7 @@ def pivot_wages_data():
     
     wages_df = pd.pivot_table(wages_df, 
                               values = 'Value', 
-                              index=['Year'], 
+                              index = ['Year'], 
                               columns = 'Sex').reset_index()
     
     wages_df = wages_df.rename(columns={'Year': 'year',

@@ -12,7 +12,7 @@ def pivot_life_expectancy_data():
     
     life_expectancy_df = pd.pivot_table(life_expectancy_df, 
                                         values = 'Value', 
-                                        index=['Year(s)'], 
+                                        index = ['Year(s)'], 
                                         columns = 'Country or Area').reset_index()
     
     life_expectancy_df = life_expectancy_df.rename(columns={'Year(s)': 'Year'})
